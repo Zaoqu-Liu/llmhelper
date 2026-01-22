@@ -2,7 +2,6 @@
 % Please edit documentation in R/llm_client.R
 \name{test_full_compatibility_with_fallback}
 \alias{test_full_compatibility_with_fallback}
-\title{Test full compatibility with tidyprompt and max_tokens fallback}
 \usage{
 test_full_compatibility_with_fallback(
   model_provider,
@@ -18,6 +17,5 @@ test_full_compatibility_with_fallback(
 )
 }
 \description{
-Test full compatibility with tidyprompt and max_tokens fallback
 }
 \keyword{internal}

@@ -4,7 +4,6 @@
 \alias{diagnose_llm_connection}
 \title{Comprehensive LLM connection diagnostics}
 \usage{
-diagnose_llm_connection(base_url, api_key, model, test_tidyprompt = TRUE)
 }
 \arguments{
 \item{base_url}{The API base URL}
@@ -13,7 +12,6 @@ diagnose_llm_connection(base_url, api_key, model, test_tidyprompt = TRUE)
 
 \item{model}{The model name}
 
-\item{test_tidyprompt}{Whether to test tidyprompt compatibility}
 }
 \description{
 This function provides detailed diagnostics for LLM connection issues,

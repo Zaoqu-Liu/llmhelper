@@ -29,7 +29,6 @@ This package depends on the following CRAN packages:
 * The package provides an interface to Large Language Models (LLMs) and requires 
   network access for API calls.
 * Examples are wrapped in \dontrun{} as they require API keys and network access.
-* The tidyprompt package is a dependency for core prompt engineering functionality.
 
 ## Reverse dependencies
 

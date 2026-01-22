@@ -2,7 +2,6 @@
 % Please edit documentation in R/json_schema.R
 \name{generate_json_schema}
 \alias{generate_json_schema}
-\title{Interactive JSON Schema Generator using tidyprompt}
 \usage{
 generate_json_schema(
   description,

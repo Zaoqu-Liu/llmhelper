@@ -20,7 +20,6 @@ get_llm_response(
 )
 }
 \arguments{
-\item{prompt}{A character string or tidyprompt object containing the prompt to send to the LLM.
 This is the main input that the LLM will respond to.}
 
 \item{llm_client}{An LLM provider object created by functions like \code{llm_openai()} or
@@ -136,7 +135,6 @@ It handles retries, validation, and response formatting automatically.
 \details{
 This function serves as a unified interface for getting responses from LLMs with
 automatic handling of different response formats and validation. It internally uses
-the tidyprompt package's \code{answer_as_text()} or \code{answer_as_json()} functions
 depending on whether a JSON schema is provided.
 
 \strong{Text Mode (json_schema = NULL):}

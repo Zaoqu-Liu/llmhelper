@@ -8,7 +8,8 @@
 
 ## Overview
 
-**llmhelper** provides a unified and user-friendly interface for interacting with Large Language Models (LLMs) in R. Built on top of the `tidyprompt` package, it offers:
+**llmhelper** provides a unified and user-friendly interface for interacting with Large Language Models (LLMs) in R. Key features:
+
 - **Multiple Provider Support**: OpenAI, Ollama, DeepSeek, and any OpenAI-compatible APIs
 - **Automatic Connection Testing**: Validates your LLM setup before use
 - **Smart max_tokens Handling**: Auto-adjusts when model limits are exceeded
@@ -187,7 +188,6 @@ Sys.setenv(LLM_API_KEY = "your-default-key")
 - Valid API keys (for cloud LLM providers)
 
 ## Related Packages
-- [tidyprompt](https://github.com/tjarkvandemerwe/tidyprompt): Core prompt engineering package
 - [httr2](https://httr2.r-lib.org/): HTTP client
 - [jsonlite](https://jeroen.r-universe.dev/jsonlite): JSON handling
 

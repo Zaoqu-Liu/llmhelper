@@ -19,7 +19,6 @@ A prompt object configured with system and user prompts
 }
 \description{
 This function creates a prompt object with system and user prompts
-using the tidyprompt package for structured LLM communication.
 }
 \author{
 Zaoqu Liu; Email: liuzaoqu@163.com

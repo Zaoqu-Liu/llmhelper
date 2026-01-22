@@ -43,7 +43,6 @@ A configured LLM provider object
 }
 \description{
 This function creates an Ollama LLM provider with better error handling
-and follows tidyprompt best practices.
 }
 \author{
 Zaoqu Liu; Email: liuzaoqu@163.com
