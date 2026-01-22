@@ -1,0 +1,15 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+^LICENSE\.md$
+^README\.Rmd$
+^cran-comments\.md$
+^\.github$
+^codecov\.yml$
+^_pkgdown\.yml$
+^docs$
+^pkgdown$
+^\.lintr$
+^\.pre-commit-config\.yaml$
+^data-raw$
+^vignettes/articles$
+^R-UNIVERSE-SETUP\.md$
