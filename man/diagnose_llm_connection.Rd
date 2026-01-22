@@ -13,10 +13,9 @@ diagnose_llm_connection(base_url, api_key, model, test_tidyprompt = TRUE)
 
 \item{model}{The model name}
 
-\item{test_tidyprompt}{Whether to test API compatibility (default: TRUE)}
+\item{test_tidyprompt}{Whether to test tidyprompt compatibility}
 }
 \description{
 This function provides detailed diagnostics for LLM connection issues,
 helping identify problems at different levels of the stack.
 }
-\export
