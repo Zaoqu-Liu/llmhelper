@@ -6,9 +6,8 @@
 
 ## Test environments
 
-* local macOS install, R 4.4.x
+* local macOS, R 4.4.x
 * GitHub Actions (ubuntu-latest, windows-latest, macos-latest)
-* R-hub (various platforms)
 
 ## Dependencies
 
