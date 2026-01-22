@@ -20,6 +20,7 @@ get_llm_response(
 )
 }
 \arguments{
+\item{prompt}{A character string containing the prompt to send to the LLM.
 This is the main input that the LLM will respond to.}
 
 \item{llm_client}{An LLM provider object created by functions like \code{llm_openai()} or
@@ -32,8 +33,8 @@ a valid response (default: 5). The function will retry if:
 \item The response doesn't meet validation criteria
 \item JSON parsing fails (when using json_schema)
 \item Network or API errors occur
-If max_retries is exceeded, NULL is returned.
-}}
+}
+If max_retries is exceeded, NULL is returned.}
 
 \item{max_words}{Integer or NULL. Maximum number of words allowed in the response
 (default: NULL, no limit). Only applies when json_schema is NULL (text responses).
@@ -53,8 +54,8 @@ representing a JSON schema structure with:
 \item name: Schema identifier
 \item description: Schema description
 \item schema: The actual JSON schema with type, properties, required fields, etc.
-Example: list(name = "person", schema = list(type = "object", properties = ...))
-}}
+}
+Example: list(name = "person", schema = list(type = "object", properties = ...))}
 
 \item{schema_strict}{Logical. Whether to enforce strict schema validation
 (default: FALSE). When TRUE:
@@ -62,8 +63,8 @@ Example: list(name = "person", schema = list(type = "object", properties = ...))
 \item JSON responses must exactly match the schema
 \item No additional properties are allowed beyond those specified
 \item All required fields must be present
-Only applicable when json_schema is provided.
-}}
+}
+Only applicable when json_schema is provided.}
 
 \item{schema_type}{Character. Method for enforcing JSON response format
 (default: 'auto'). Options:
@@ -82,8 +83,8 @@ Only applicable when json_schema is provided.
 \item Shows the prompt being sent
 \item Displays the LLM's response
 \item Reports retry attempts and validation failures
-Useful for debugging and monitoring LLM interactions.
-}}
+}
+Useful for debugging and monitoring LLM interactions.}
 
 \item{stream}{Logical or NULL. Whether to stream the response in real-time
 (default: NULL, uses LLM client's setting). When TRUE:
@@ -91,8 +92,8 @@ Useful for debugging and monitoring LLM interactions.
 \item Response appears progressively as the LLM generates it
 \item Provides faster perceived response time
 \item Only works if the LLM provider supports streaming
-Note: Streaming is automatically disabled when verbose = FALSE.
-}}
+}
+Note: Streaming is automatically disabled when verbose = FALSE.}
 
 \item{clean_chat_history}{Logical. Whether to clean chat history between retries
 (default: TRUE). When TRUE:
@@ -100,8 +101,8 @@ Note: Streaming is automatically disabled when verbose = FALSE.
 \item Keeps only essential messages in context (first/last user message, last assistant message, system messages)
 \item Reduces context window usage on retries
 \item May improve performance with repeatedly failing responses
-When FALSE, full conversation history is maintained.
-}}
+}
+When FALSE, full conversation history is maintained.}
 
 \item{return_mode}{Character. What information to return (default: "only_response"). Options:
 \itemize{
