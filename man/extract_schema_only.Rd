@@ -10,6 +10,7 @@ extract_schema_only(schema_result)
 \item{schema_result}{Result from generate_json_schema}
 }
 \value{
+Just the schema portion for direct use
 }
 \description{
 Extract only the schema part from generated result

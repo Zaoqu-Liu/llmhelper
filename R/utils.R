@@ -18,6 +18,7 @@ NULL
 #' Returns the left-hand side if it is not NULL, otherwise returns the
 #' right-hand side. This is useful for providing default values.
 #'
+#' @name grapes-or-or-grapes
 #' @param x A value to check for NULL.
 #' @param y A default value to return if x is NULL.
 #' @return x if not NULL, otherwise y.

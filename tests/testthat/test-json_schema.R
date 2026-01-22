@@ -14,12 +14,19 @@ test_that("extract_schema_only extracts schema correctly", {
 })
 
 test_that("extract_schema_only handles already extracted schema", {
+  # When input has a "schema" key, it extracts the schema portion
   schema_only <- list(
     name = "direct_schema",
     schema = list(type = "object")
   )
   
   result <- extract_schema_only(schema_only)
-  # Should return the input when no nested schema
-  expect_equal(result$name, "direct_schema")
+  # Should return the schema portion (list(type = "object"))
+  expect_equal(result$type, "object")
+  
+  # When input has no "schema" key, return as-is
+  plain_schema <- list(type = "string", description = "A string field")
+  result2 <- extract_schema_only(plain_schema)
+  expect_equal(result2$type, "string")
+  expect_equal(result2$description, "A string field")
 })
