@@ -3,6 +3,7 @@
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/Zaoqu-Liu/llmhelper/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/Zaoqu-Liu/llmhelper/actions/workflows/R-CMD-check.yaml)
 [![CRAN status](https://www.r-pkg.org/badges/version/llmhelper)](https://CRAN.R-project.org/package=llmhelper)
+[![r-universe](https://zaoqu-liu.r-universe.dev/badges/llmhelper)](https://zaoqu-liu.r-universe.dev/llmhelper)
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 <!-- badges: end -->
 
