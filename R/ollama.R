@@ -38,6 +38,8 @@ ollama_list_models <- function(.ollama_server = "http://localhost:11434") {
 #'
 #' @param .model The name of the model to download
 #' @param .ollama_server The URL of the Ollama server (default: "http://localhost:11434")
+#' @return No return value, called for side effects (downloads the model to
+#'   the Ollama server with progress displayed in the console).
 #' @author Zaoqu Liu; Email: liuzaoqu@163.com
 #' @export
 ollama_download_model <- function(.model, .ollama_server = "http://localhost:11434") {

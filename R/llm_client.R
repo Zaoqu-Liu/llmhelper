@@ -489,6 +489,13 @@ llm_ollama <- function(
 #' @param api_key The API key
 #' @param model The model name
 #' @param test_tidyprompt Whether to test tidyprompt compatibility
+#' @return A list (invisible) containing test results with elements:
+#'   \itemize{
+#'     \item \code{connectivity}: Logical indicating if basic network connectivity passed
+#'     \item \code{endpoint}: Logical indicating if API endpoint is accessible
+#'     \item \code{auth}: Logical indicating if authentication and model test passed
+#'     \item \code{tidyprompt}: Logical indicating tidyprompt compatibility (if tested)
+#'   }
 #' @export
 diagnose_llm_connection <- function(base_url, api_key, model, test_tidyprompt = TRUE) {
   cli::cli_h1("LLM Connection Comprehensive Diagnosis")

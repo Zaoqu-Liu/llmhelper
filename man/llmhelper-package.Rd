@@ -4,9 +4,9 @@
 \name{llmhelper-package}
 \alias{llmhelper-package}
 \alias{llmhelper}
-\title{llmhelper: Unified Interface for Large Language Model Interactions in R}
+\title{llmhelper: Unified Interface for Large Language Model Interactions}
 \description{
-Provides a unified and user-friendly interface for interacting with Large Language Models (LLMs) through various providers including OpenAI, Ollama, and other OpenAI-compatible APIs. Features include automatic connection testing, max_tokens limit auto-adjustment, structured JSON responses with schema validation, interactive JSON schema generation, prompt templating, and comprehensive diagnostics.
+Provides a unified interface for interacting with Large Language Models (LLMs) through various providers including OpenAI \url{https://platform.openai.com/docs/api-reference}, Ollama \url{https://ollama.com/}, and other OpenAI-compatible APIs. Features include automatic connection testing, max_tokens limit auto-adjustment, structured JSON responses with schema validation, interactive JSON schema generation, prompt templating, and comprehensive diagnostics.
 
 The llmhelper package provides a unified and user-friendly interface for
 interacting with Large Language Models (LLMs) through various providers

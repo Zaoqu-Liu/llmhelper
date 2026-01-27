@@ -11,6 +11,10 @@ ollama_download_model(.model, .ollama_server = "http://localhost:11434")
 
 \item{.ollama_server}{The URL of the Ollama server (default: "http://localhost:11434")}
 }
+\value{
+No return value, called for side effects (downloads the model to
+the Ollama server with progress displayed in the console).
+}
 \description{
 This function sends a request to download a specified model from Ollama's
 model library with progress tracking.

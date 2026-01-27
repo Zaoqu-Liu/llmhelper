@@ -15,6 +15,15 @@ diagnose_llm_connection(base_url, api_key, model, test_tidyprompt = TRUE)
 
 \item{test_tidyprompt}{Whether to test tidyprompt compatibility}
 }
+\value{
+A list (invisible) containing test results with elements:
+\itemize{
+\item \code{connectivity}: Logical indicating if basic network connectivity passed
+\item \code{endpoint}: Logical indicating if API endpoint is accessible
+\item \code{auth}: Logical indicating if authentication and model test passed
+\item \code{tidyprompt}: Logical indicating tidyprompt compatibility (if tested)
+}
+}
 \description{
 This function provides detailed diagnostics for LLM connection issues,
 helping identify problems at different levels of the stack.
